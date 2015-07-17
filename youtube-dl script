@@ -1,0 +1,21 @@
+#!/bin/bash 
+
+
+
+
+sudo youtube-dl -U
+
+while :
+do
+
+echo Hello, I am your Youtube download assistant please enter your link
+
+read varname
+
+
+youtube-dl --extract-audio --audio-format mp3 -o "/home/christian/Music/%(title)s.%(ext)s" $varname
+
+
+
+
+done
